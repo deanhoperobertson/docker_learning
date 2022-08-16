@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+#NodeJS
+node_modules/
+
 # Rudundant files
 .DS_Store
 

@@ -4,7 +4,7 @@ FROM python:3.9
 #set the default working directory
 WORKDIR /app
 
-#copy the file into the image
+#copy the requirements file into the image
 COPY requirements.txt requirements.txt
 
 #pip install all the dependencies for this python app

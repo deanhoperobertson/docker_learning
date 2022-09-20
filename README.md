@@ -5,19 +5,22 @@ A repo for learning how to create and utilize Docker images and containers acros
 
 For build, view and running images:
 ```
-- docker build -t IMAGE_NAME
+- docker build -t IMAGE_NAME .
 - docker images
 - docker run IMAGE_NAME
 ```
 
 For deleting images and active containers:
 ```
-- docker container ls -a OR docker ps
+- docker ps (shows running)
+- docker ps -a (shows all)
+
 - docker rm CONTAINER_ID
+- docker container prune (removes all stopped containers)
 - docker rmi IMAGE_ID
 ```
 
-## Run Flask Apps on Port
+## Run Flask Apps (Gunicorn optional) on Port
 
 Run python flask app by exposing the port inside the container to another port outside the container:
 ```

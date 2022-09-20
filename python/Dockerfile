@@ -14,7 +14,11 @@ RUN pip install -r requirements.txt
 COPY . .
 
 #host is specified to make the application visible from outside container
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+#flask app
+#CMD [ "python3", "-m", "flask", "run", "--host=0.0.0.0"]
 
+#gunicorn app
+CMD [ "gunicorn", "-b", "0.0.0.0", "app:app"]
 
+#basic python
 #CMD ["python3", "./main.py"]

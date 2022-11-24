@@ -36,7 +36,7 @@ To run the app in detached mode:
 
 ## Run NodeJS Apps on Port
 
-Run python flask app by exposing the port inside the container to another port outside the container:
+Run Nodejs app by exposing the port inside the container to another port outside the container:
 ```
 - docker run -it --init -p TARGET_PORT:HOST_PORT IMAGE_NAME
 ```

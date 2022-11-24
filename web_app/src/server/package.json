@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "server to host react application",
+  "main": "server.js",
+  "scripts": {
+    "test": "NA"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deanhoperobertson/docker_learning.git"
+  },
+  "keywords": [
+    "docker",
+    "react",
+    "application"
+  ],
+  "author": "Dean Hope Robertson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deanhoperobertson/docker_learning/issues"
+  },
+  "homepage": "https://github.com/deanhoperobertson/docker_learning#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

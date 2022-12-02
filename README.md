@@ -30,8 +30,8 @@ Run python flask app by exposing the port inside the container to another port o
 To run the app in detached mode:
 ```
 - docker run -d -p TARGET_PORT:HOST_PORT IMAGE_NAME
-- docker stop CONTAINER_ID
-- docker restart CONTAINER_ID
+- docker stop CONTAINER_ID/NAME
+- docker restart CONTAINER_ID/NAME
 ```
 
 ## Run NodeJS Apps on Port
@@ -39,4 +39,11 @@ To run the app in detached mode:
 Run Nodejs app by exposing the port inside the container to another port outside the container:
 ```
 - docker run -it --init -p TARGET_PORT:HOST_PORT IMAGE_NAME
+```
+
+## Run Web Application with Docker-Compose
+
+Run Nodejs app by exposing the port inside the container to another port outside the container:
+```
+- docker-compose up
 ```
